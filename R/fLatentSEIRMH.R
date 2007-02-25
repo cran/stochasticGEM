@@ -7,12 +7,12 @@ fLatentSEIR.MH <- function(N, infectionTimes = NULL, latencyTimes = NULL, remova
         stop(" 'infectious.density' should be one of\n\t 'exponential','gamma' and 'weibull'")
     }
     if(infectious.density == "exponential"){
-        if(START != 2 && !is.null(START)){
+        if(length(START) != 2 && !is.null(START)){
         stop("Starting values should be of length 2 or 'NULL' for exponential")
         }
     }
     else{
-        if(START != 3 && !is.null(START)){
+        if(length(START) != 3 && !is.null(START)){
         stop("Starting values should be of length 3 or 'NULL' for gamma/Weibull")
         }
     }
