@@ -1,0 +1,3 @@
+useDynLib(stochasticGEM)
+
+export(SIR.MLE,SIR.MH,fLatentSEIR.MH,getValidSEIR,SEIR.MH)
